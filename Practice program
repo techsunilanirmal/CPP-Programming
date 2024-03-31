@@ -1,0 +1,62 @@
+//Addition of two numbers:
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int num1,num2,sum;
+    
+    cout<<"Enter two numbers:";
+    cin>>num1>>num2;
+    
+    sum=num1+num2;
+    cout<<"Addition is:"<<sum;
+    
+    return 0;
+}
+
+//Average of three numbers:
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,c,sum,avg;
+    
+    cout<<"Enter three numbers:";
+    cin>>a>>b>>c;
+    
+    sum=a+b+c;
+    cout<<"Addition is:"<<sum<<endl;
+    
+    avg=sum/3;
+    cout<<"Average is:"<<avg;
+    
+    return 0;
+}
+
+//Area of circle:
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int area,rad;
+    const float pi=3.14;
+    
+    cout<<"Enter radius:";
+    cin>>rad;
+    
+    area=pi*rad*rad;
+    cout<<"Area of circle is:"<<area;
+    
+    return 0;
+}
+
+// Q1. Write a program to find area of triangle.
+// Q2. Write a program to calculate Simple interest.
+// Q3. Input marks of five subject and find average.
+//Q4. Write a program to find sqaure of the number.
