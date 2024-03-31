@@ -1,0 +1,87 @@
+// Result according to percentage:-
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int per;
+    
+    cout<<"Enter your percentage:";
+    cin>>per;
+    
+    if(per<=100 && per>=60)
+    {
+        cout<<"A grade";
+    }
+    if(per<60 && per>=45)
+    {
+        cout<<"B grade";
+    }
+    if(per<45 && per>=33)
+    {
+        cout<<"C grade";
+    }
+    if(per<33)
+    {
+        cout<<"Fail";
+    }
+    return 0;
+}
+
+//Program to check number is Positive , Negative OR Zero:-
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+    
+    cout<<"Enter a number:";
+    cin>>num;
+    
+    if(num>0)
+    {
+        cout<<"Number is Positive!!!";
+    }
+    if(num<0)
+    {
+        cout<<"Number is Negative!!!";
+    }
+    if(num==0)
+    {
+        cout<<"Number is Zero!!!";
+    }
+    
+    return 0;
+}
+
+
+//Program to check greater value in 2 numbers:-
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int num1,num2;
+    
+    cout<<"Enter two number:";
+    cin>>num1>>num2;
+    
+    if(num1>num2)
+    {
+        cout<<"Num1 is greater!!!";
+    }
+    if(num1<num2)
+    {
+        cout<<"Num2 is greater!!!";
+    }
+    if(num1==num2)
+    {
+        cout<<"Both are equals!!!";
+    }
+    
+    return 0;
+}
