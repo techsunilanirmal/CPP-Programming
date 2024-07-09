@@ -1,0 +1,33 @@
+#include <iostream> 
+using namespace std; 
+
+class Student
+{ 
+    public: 
+    int stu_rollno ; 
+    string stu_name; 
+      
+ 
+    void printname(); 
+      
+    void printrollno() 
+    { 
+        cout <<"My roll no is:"<<stu_rollno<<endl; 
+    } 
+}; 
+  
+void Student::printname() 
+{ 
+    cout <<"My name is:"<<stu_name<<endl;  
+} 
+int main() 
+{ 
+      
+    class Student obj; 
+    obj.stu_rollno=1; 
+    obj.stu_name="Disha"; 
+      
+    obj.printrollno();
+    obj.printname(); 
+    return 0; 
+} 
