@@ -1,0 +1,99 @@
+// Default constructor:-
+
+#include <iostream>
+using namespace std;
+ 
+class A 
+{
+public:
+    int rollno;
+    string name;
+ 
+    // Default Constructor
+    A()
+    {
+        rollno=101;
+        name="Disha";
+    }
+};
+ 
+int main()
+{
+    A obj;
+    cout << "Roll no is:" <<obj.rollno<<endl;
+    cout<<"My name is:"<<obj.name<<endl;
+    
+    return 0;
+}
+
+
+//Parameterized Constructor:-
+
+#include <iostream>
+using namespace std;
+ 
+class B{
+private:
+
+    int id;
+    string name;
+ 
+public:
+    B(int x, string y)
+    {
+        id=x;
+        name=y;
+    }
+ 
+    int getid() 
+    { 
+        return id; 
+    }
+    string getname()
+    { 
+        return name; 
+    }
+};
+ 
+int main()
+{
+    
+    B obj(101,"Disha");
+ 
+    cout << "ID:" << obj.getid()<<endl;
+    cout << "Name:" <<obj.getname()<<endl;
+ 
+    return 0;
+}
+
+
+//Copy constructor:-
+
+#include <iostream>
+using namespace std;
+ 
+class Sun{
+    
+    int a; 
+ 
+public:
+    Sun(int A) 
+    { 
+        a=A; 
+    }
+    void Show() 
+    { 
+        cout << "A:-" <<a<<endl; 
+    }
+};
+ 
+int main()
+{
+    Sun obj(10);
+    obj.Show();
+ 
+    Sun obj1(obj);
+    obj1.Show();
+    
+    return 0;
+}
