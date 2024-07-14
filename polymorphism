@@ -1,0 +1,55 @@
+//Compile-Time Polymorphism:-
+
+#include<iostream>
+using namespace std;
+
+void Info(int age)
+{
+    cout<<age<<endl;
+}
+void Info(string name)
+{
+    cout<<name<<endl;
+}
+void Info(double marks)
+{
+    cout<<marks<<endl;
+}
+int main()
+{
+    Info(20);
+    Info("Disha");
+    Info(83.54);
+    
+    return 0;
+}
+
+
+//Run-Time Polymorphism:-
+
+#include<iostream>
+using namespace std;
+
+class A
+{
+    public:
+        void Show()
+        {
+            cout<<"class A";
+        }
+};
+class B: public A
+{
+    public:
+        void Show()
+        {
+            cout<<"Class B";
+        }
+};
+int main()
+{
+    B obj;
+    obj.Show();
+    
+    return 0;
+}
