@@ -1,0 +1,121 @@
+//Pattern 1:-
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i,j;
+    
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            cout<<"*"<<" ";
+        }
+        
+        cout<<"\n";
+    }
+    
+    return 0;
+}
+
+
+//Pattern 2:
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i,j;
+    
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(i>=j)
+            cout<<"*";
+            else
+            cout<<"  ";
+        }  
+            cout<<"\n";
+        }
+        
+        return 0;
+    }
+
+
+//Pattern 3:
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i,j;
+    
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if(i<=j)
+            cout<<"*";
+            else
+            cout<<"  ";
+        }  
+            cout<<"\n";
+        }
+        
+        return 0;
+    }
+
+
+//Pattern 4:
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i,j;
+    
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if((i+j)<=6)
+            cout<<"*";
+            else
+            cout<<"  ";
+        }  
+            cout<<"\n";
+        }
+        
+        return 0;
+    }
+
+
+//Pattern 5:
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i,j;
+    
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            if((i+j)>=6)
+            cout<<"*";
+            else
+            cout<<"  ";
+        }  
+            cout<<"\n";
+        }
+        
+        return 0;
+    }
