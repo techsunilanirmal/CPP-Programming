@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+
+    try {
+        int a = 10,b=0,ans;
+     if (b == 0) 
+       {
+            throw runtime_error(
+                "Division by zero not allowed!");
+        }
+ 
+        ans = a /b;
+        cout << "Answer after division: " << ans << endl;
+    }
+    catch (const exception& e) 
+    {
+        cout << "Exception " << e.what() << endl;
+    }
+ 
+    return 0;
+}
