@@ -1,0 +1,204 @@
+//1. Single Inheritance
+
+#include<iostream>
+using namespace std;
+
+class Animal 
+{
+public:
+    void eat() 
+    { 
+        cout << "Eating..." << endl;
+    }
+};
+class Dog : public Animal 
+{
+public:
+    void bark() 
+    { 
+        cout <<"Barking!"<< endl; 
+    }
+};
+int main() 
+{
+    Dog MyDog;
+    MyDog.eat(); 
+    MyDog.bark();
+    
+    return 0;
+}
+
+
+//2. Multiple Inheritance
+
+#include<iostream>
+using namespace std;
+
+class Animal 
+{
+public:
+    void eat() 
+    { 
+        cout << "Eating!" << endl; 
+    }
+};
+class Mammal 
+{
+public:
+    void walk() 
+    { 
+        cout << "Walking!" << endl; 
+    }
+};
+class Dog : public Animal, public Mammal 
+{
+public:
+    void bark() 
+    {
+        cout << "Barking!" << endl;
+    }
+};
+int main() 
+{
+    Dog obj;
+    obj.eat();  
+    obj.walk();
+    obj.bark(); 
+    
+    return 0;
+}
+
+
+//3. Multilevel Inheritance
+
+#include<iostream>
+using namespace std;
+
+class Animal 
+{
+public:
+    void Eat() 
+    { 
+        cout<<"Eating..."<<endl; 
+    }
+};
+class Mammal:public Animal 
+{
+public:
+    void Walk() 
+    { 
+        cout<<"Walking..."<<endl; 
+    }
+};
+class Dog:public Mammal 
+{
+public:
+    void Bark() 
+    { 
+        cout<< "Barking!"<<endl; 
+    }
+};
+int main() 
+{
+    Dog MyDog;
+    MyDog.Eat();  
+    MyDog.Walk();
+    MyDog.Bark(); 
+    
+    return 0;
+}
+
+
+//4. Hierarchical Inheritance
+
+#include<iostream>
+using namespace std;
+
+class Animal 
+{
+public:
+    void Eat() 
+    { 
+        cout << "Eating!!" << endl; 
+    }
+};
+class Dog : public Animal 
+{
+public:
+    void Bark() 
+    { 
+        cout << "Barking!" << endl;
+    }
+};
+class Cat : public Animal 
+{
+public:
+    void Meow() 
+    { 
+        cout << "Meowing!" << endl; 
+    }
+};
+int main() 
+{
+    Dog MyDog;
+    Cat MyCat;
+    
+    MyDog.Eat(); 
+    MyDog.Bark();
+    MyCat.Eat();  
+    MyCat.Meow();
+    
+    return 0;
+}
+
+
+//5.Hybrid Inheritance (Combination of multiple inheritance types):-
+
+#include<iostream>
+using namespace std;
+
+class Animal 
+{
+public:
+    void Eat() 
+    { 
+        cout << "Eating..." << endl;
+    }
+};
+class Mammal 
+{
+public:
+    void Walk() 
+    {
+        cout << "Walking..." << endl; 
+    }
+};
+class Dog : public Animal, public Mammal 
+{
+public:
+    void Bark()
+    { 
+        cout << "Barking!" << endl; 
+    }
+};
+class Cat : public Animal 
+{
+public:
+    void Meow() 
+    { 
+        cout << "Meowing!" << endl; 
+    }
+};
+int main()
+{
+    Dog MyDog;
+    Cat MyCat;
+    
+    MyDog.Eat();  
+    MyDog.Walk(); 
+    MyDog.Bark(); 
+    MyCat.Eat();  
+    MyCat.Meow();
+    
+    return 0;
+}
