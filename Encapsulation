@@ -1,0 +1,107 @@
+//Encapsulation:- An Encapsulation means it binds data and code together into one unit.
+
+
+#include<iostream>
+using namespace std;
+
+class Bank
+{
+    private:
+        double balance; 
+
+    public:
+    // public member function to deposit money
+        void deposition(double amount) 
+    {
+        balance=balance+amount;
+    }
+    // public member function to withdraw money
+        void withdrawal(double amount) 
+        {
+        if(balance >= amount) 
+        {
+            balance=balance-amount;
+        } 
+        else 
+        {
+            cout<<"Insufficient balance in your A/C"<< endl;
+        }
+    }
+    // public member function to display balance
+        void display() 
+        {
+        cout <<"Balance in your A/C : " <<balance<<endl;
+        }
+};
+int main() 
+{
+    Bank obj;
+    obj.deposition(1000);
+    obj.withdrawal(500);
+    obj.display();
+    
+    return 0;
+}
+
+
+
+//Encapsulation Program 2:-
+
+#include<iostream>
+using namespace std;
+
+class Employee 
+{
+private:
+    string name;
+    int age;
+    double salary;
+
+public:
+    // Constructor to initialize employee details
+    Employee(string empName, int empAge, double empSalary) 
+    {
+        name=empName;
+        age=empAge;
+        salary=empSalary;
+    }
+    // Public member function to display employee details
+    void display() 
+    {
+        cout<< "Employee name is : "<< name<< endl;
+        cout<< "Employee age is : "<< age<< endl;
+        cout<< "Employee salary is: "<< salary<< endl;
+    }
+
+    // Public member function to increase salary
+    void IncreaseSalary(double increment) 
+    {
+        salary=salary+increment;
+    }
+
+    // Public member function to change employee name
+    void ChangeName(string newName) 
+    {
+        name=newName;
+    }
+};
+int main() 
+{
+    Employee emp1("Sunila Nirmal",21,50000);
+    emp1.display();
+    
+    cout<<"********************************"<<endl;
+    
+    emp1.IncreaseSalary(10000);
+    emp1.display();
+    
+    cout<<"*******************************"<<endl;
+
+    emp1.ChangeName("Sejal Gupta");
+    emp1.display();
+
+    return 0;
+}
+
+
+
